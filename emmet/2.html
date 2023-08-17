@@ -1,11 +1,369 @@
+<!-- html:5 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- įvairūs pavyzdžiai  -->
+
+    <!-- h1{Some title}+p>lorem20 -->
+    <h1>Some title</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolore iste
+      laborum provident hic, assumenda eius aliquid labore pariatur perferendis.
+    </p>
+
+    <!-- ul>li*5>a[href=#]{link $}  -->
+    <ul>
+      <li><a href="#">link 1</a></li>
+      <li><a href="#">link 2</a></li>
+      <li><a href="#">link 3</a></li>
+      <li><a href="#">link 4</a></li>
+      <li><a href="#">link 5</a></li>
+    </ul>
+
+    <!-- ul>(li>ul>li*5{list item number $})+li*4>lorem4 -->
+    <ul>
+      <li>
+        <ul>
+          <li>list item number 1</li>
+          <li>list item number 2</li>
+          <li>list item number 3</li>
+          <li>list item number 4</li>
+          <li>list item number 5</li>
+        </ul>
+      </li>
+      <li>Lorem ipsum dolor sit.</li>
+      <li>Sit nobis neque iure!</li>
+      <li>Fugiat, earum! Quasi, at!</li>
+      <li>Odit error inventore molestiae.</li>
+    </ul>
+
+    <!-- p*3>{repeated text $ }+lorem4 -->
+    <p>repeated text 1 Lorem ipsum dolor sit.</p>
+    <p>repeated text 2 Aspernatur sint natus dolorum!</p>
+    <p>repeated text 3 Ea nesciunt laborum illo?</p>
+
+    <!-- article*5>.image-wrapper>img[src=https://via.placeholder.com/200 alt='some placeholder image']^.content-wrapper>h3{article title}+(p>lorem5)+button{click here to learn more} -->
+    <article>
+      <div class="image-wrapper">
+        <img
+          src="https://via.placeholder.com/200"
+          alt="some placeholder image"
+        />
+      </div>
+      <div class="content-wrapper">
+        <h3>article title</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button>click here to learn more</button>
+      </div>
+    </article>
+    <article>
+      <div class="image-wrapper">
+        <img
+          src="https://via.placeholder.com/200"
+          alt="some placeholder image"
+        />
+      </div>
+      <div class="content-wrapper">
+        <h3>article title</h3>
+        <p>Beatae repellat suscipit officiis nobis?</p>
+        <button>click here to learn more</button>
+      </div>
+    </article>
+    <article>
+      <div class="image-wrapper">
+        <img
+          src="https://via.placeholder.com/200"
+          alt="some placeholder image"
+        />
+      </div>
+      <div class="content-wrapper">
+        <h3>article title</h3>
+        <p>Dolorum atque voluptatem harum consequuntur?</p>
+        <button>click here to learn more</button>
+      </div>
+    </article>
+    <article>
+      <div class="image-wrapper">
+        <img
+          src="https://via.placeholder.com/200"
+          alt="some placeholder image"
+        />
+      </div>
+      <div class="content-wrapper">
+        <h3>article title</h3>
+        <p>A accusantium earum labore quasi?</p>
+        <button>click here to learn more</button>
+      </div>
+    </article>
+    <article>
+      <div class="image-wrapper">
+        <img
+          src="https://via.placeholder.com/200"
+          alt="some placeholder image"
+        />
+      </div>
+      <div class="content-wrapper">
+        <h3>article title</h3>
+        <p>Aliquid sed quis ab reprehenderit!</p>
+        <button>click here to learn more</button>
+      </div>
+    </article>
+
+    <!-- header>(h1>a[href='home.html']{Page title}.page-brand)+(ul>li.list-item*5>a[href=#]{link $}.nav-link) -->
+    <header>
+      <h1><a href="home.html" class="page-brand">Page title</a></h1>
+      <ul>
+        <li class="list-item">
+          <a href="" thref="#" class="nav-link">link 1</a>
+        </li>
+        <li class="list-item">
+          <a href="" thref="#" class="nav-link">link 2</a>
+        </li>
+        <li class="list-item">
+          <a href="" thref="#" class="nav-link">link 3</a>
+        </li>
+        <li class="list-item">
+          <a href="" thref="#" class="nav-link">link 4</a>
+        </li>
+        <li class="list-item">
+          <a href="" thref="#" class="nav-link">link 5</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- img[src='image.jpg' alt='some image' width=200] -->
+    <img src="image.jpg" alt="some image" width="200" />
+
+    <!-- img[src='image.jpg'][alt='some image'][width=200] -->
+    <img src="image.jpg" alt="some image" width="200" />
+
+    <!-- div*5.block#block-$ -->
+    <div class="block" id="block-1"></div>
+    <div class="block" id="block-2"></div>
+    <div class="block" id="block-3"></div>
+    <div class="block" id="block-4"></div>
+    <div class="block" id="block-5"></div>
+
+    <!-- div*5.block.block-$  -->
+    <div class="block block-1"></div>
+    <div class="block block-2"></div>
+    <div class="block block-3"></div>
+    <div class="block block-4"></div>
+    <div class="block block-5"></div>
+
+    <!-- .slider-wrapper>(.slide.slide-1.active-slide{slide number 1})+div*5.slide.slide-$@2>{slide number $@2}  -->
+    <div class="slider-wrapper">
+      <div class="slide slide-1 active-slide">slide number 1</div>
+      <div class="slide slide-2">slide number 2</div>
+      <div class="slide slide-3">slide number 3</div>
+      <div class="slide slide-4">slide number 4</div>
+      <div class="slide slide-5">slide number 5</div>
+      <div class="slide slide-6">slide number 6</div>
+    </div>
+
+    <!-- .team-wrapper>.team-member*3>.image-wrapper>img[src="https://i.pravatar.cc/150?img=$"]^.information>(h3>lorem2)+p>lorem5 -->
+
+    <div class="team-wrapper">
+      <div class="team-member">
+        <div class="image-wrapper">
+          <img src="https://i.pravatar.cc/150?img=1" alt="" />
+        </div>
+        <div class="information">
+          <h3>Lorem, ipsum.</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="image-wrapper">
+          <img src="https://i.pravatar.cc/150?img=2" alt="" />
+        </div>
+        <div class="information">
+          <h3>Consequuntur, omnis?</h3>
+          <p>Totam consequuntur dolore possimus unde.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="image-wrapper">
+          <img src="https://i.pravatar.cc/150?img=3" alt="" />
+        </div>
+        <div class="information">
+          <h3>Voluptate, sequi.</h3>
+          <p>Eos consequuntur omnis molestiae nesciunt!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- .projects-wrapper>h2{Our projects}+.projects-list>.project-block*5>(.image-wrapper>img[src="https://via.placeholder.com/200"])+(.project-information>h3>lorem4^p>lorem10^a[href='#']+p>{tags: }+span{project}+span{something}) -->
+
+    <div class="projects-wrapper">
+      <h2>Our projects</h2>
+      <div class="projects-list">
+        <div class="project-block">
+          <div class="image-wrapper">
+            <img src="https://via.placeholder.com/200" alt="" />
+          </div>
+          <div class="project-information">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+              quae?
+            </p>
+            <a href="#"></a>
+            <p>tags: <span>project</span><span>something</span></p>
+          </div>
+        </div>
+        <div class="project-block">
+          <div class="image-wrapper">
+            <img src="https://via.placeholder.com/200" alt="" />
+          </div>
+          <div class="project-information">
+            <h3>Inventore saepe ipsum repudiandae.</h3>
+            <p>Magni, porro suscipit at unde ex dolore id illum itaque?</p>
+            <a href="#"></a>
+            <p>tags: <span>project</span><span>something</span></p>
+          </div>
+        </div>
+        <div class="project-block">
+          <div class="image-wrapper">
+            <img src="https://via.placeholder.com/200" alt="" />
+          </div>
+          <div class="project-information">
+            <h3>Ab consectetur impedit quaerat!</h3>
+            <p>
+              Unde praesentium id veritatis autem eligendi velit? Quidem, nisi
+              distinctio.
+            </p>
+            <a href="#"></a>
+            <p>tags: <span>project</span><span>something</span></p>
+          </div>
+        </div>
+        <div class="project-block">
+          <div class="image-wrapper">
+            <img src="https://via.placeholder.com/200" alt="" />
+          </div>
+          <div class="project-information">
+            <h3>Doloribus error nihil possimus.</h3>
+            <p>
+              Optio similique, voluptates dolor dicta placeat quam assumenda
+              illo. Non!
+            </p>
+            <a href="#"></a>
+            <p>tags: <span>project</span><span>something</span></p>
+          </div>
+        </div>
+        <div class="project-block">
+          <div class="image-wrapper">
+            <img src="https://via.placeholder.com/200" alt="" />
+          </div>
+          <div class="project-information">
+            <h3>Soluta explicabo tempora laboriosam.</h3>
+            <p>
+              Et esse asperiores iure reprehenderit voluptas nesciunt corporis
+              eligendi perspiciatis?
+            </p>
+            <a href="#"></a>
+            <p>tags: <span>project</span><span>something</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- table[border='1']>tr*5>td*4 -->
+    <table border="1">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <!-- table[border='1']>tr*5>th*4 -->
+    <table border="1">
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </table>
+
+    <!-- table[border='1']>tr*3>td*5>lorem5 -->
+    <table border="1">
+      <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Eligendi vero aliquid excepturi necessitatibus.</td>
+        <td>Velit, ab libero. Sint, eligendi!</td>
+        <td>A, voluptates saepe! Aut, voluptatum?</td>
+        <td>Amet quaerat at quidem. Odit!</td>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Voluptate impedit placeat accusantium quidem!</td>
+        <td>Dicta ratione nostrum fugiat animi!</td>
+        <td>Nemo aperiam inventore a modi.</td>
+        <td>Assumenda odio voluptates eaque aut!</td>
+      </tr>
+      <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Qui consectetur eaque magni libero.</td>
+        <td>Illum saepe quo aliquam optio!</td>
+        <td>Velit voluptas aspernatur quae repudiandae.</td>
+        <td>Voluptatum eius harum id. Dolorum!</td>
+      </tr>
+    </table>
+  </body>
 </html>
