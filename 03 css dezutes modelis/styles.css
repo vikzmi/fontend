@@ -1,0 +1,68 @@
+body {
+  background-color: rgba(0, 0, 255, 0.658);
+}
+div {
+  background-color: rgb(206, 137, 175);
+  max-width: 80%;
+  margin: 5em auto;
+}
+#pirmas {
+  border: 12px solid red;
+  box-shadow: 5px 5px 15px black;
+}
+
+#antras {
+  padding: 5em;
+  border-radius: 150px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+#trecias {
+  padding: 5em 0;
+  border-bottom: 10px solid cyan;
+  border-right: 15px dashed magenta;
+}
+#ketvirtas {
+  padding: 0 5em 1em;
+  border-radius: 20px 0 50px 0;
+}
+#penktas {
+  padding: 0 0 5em;
+  border-left: 10px dashed yellow;
+}
+#blokas li {
+  display: inline-block;
+}
+form {
+  background-color: rgb(236, 106, 13);
+  width: 500px;
+  padding: 1em;
+}
+input {
+  display: block;
+}
+#zyma p,
+#zyma a {
+  font-size: 2em;
+}
+#zyma mark:hover {
+  position: relative;
+  bottom: 10px;
+}
+#zyma a:hover {
+    position: relative;
+    left: 20px;
+  }
+  #virsus-blokas{
+    background-color: red;
+    padding: 1em;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    margin: 0;
+  }
+  #virsus-blokas a{
+    color: azure;
+    text-decoration: none;
+  }
+
+  
