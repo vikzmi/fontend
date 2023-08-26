@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin: 60px;
+  width: 300px;
+  background: #ffe4c4;
+}
+.image {
+  position: relative;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+.info {
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding: 8px;
+  left: 0;
+  bottom: -1px;
+}
+
+article {
+  padding: 36px 16px;
+}
+article h3 {
+  padding-bottom: 16px;
+}
