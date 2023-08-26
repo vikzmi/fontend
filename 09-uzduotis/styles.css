@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+nav ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+nav li a {
+  font-size: 1em;
+  margin: 8px;
+}
+header .content {
+  background-color: #90ee90;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+.content p {
+  margin: 16px;
+}
+
+.mygtukai .pirminis {
+  border: 2px solid #393939;
+  background-color: #393939;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: inline-block;
+}
+.mygtukai .antrinis {
+  border: 2px solid #393939;
+  background-color: none;
+  color: #393939;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+.info {
+  background-color: #7fffd4;
+  padding: 16px;
+}
+.straipsniai {
+  background-color: #ffe4c4;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+
+}
+.straipsnis {
+  background-color: #fff1e1;
+  width: calc(33% - 10px);
+  padding: 16px;
+}
+.straipsnis p {
+    padding:  16px 0px;
+  }
+.straipsnis a {
+  display: block;
+}
+footer {
+  padding: 60px;
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer p {
+  width: 30%;
+}
+footer ul{
+    margin-top: 16px;
+}
+footer li{
+    margin-left: 30px;
+}
+footer a{
+   color: #0C9DAB;
+   text-decoration: none;
+  }
