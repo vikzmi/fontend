@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+}
+header {
+  text-align: center;
+}
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+h2 {
+  font-size: 2em;
+}
+.nav {
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+}
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.nav a {
+  text-decoration: none;
+  margin: 16px;
+  color: #8fa3df;
+}
+.nav a:hover {
+  color: #edf2ff;
+}
+.virselis {
+  background: url(img/pexels-drone-trotter-7974790.jpg);
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 200px);
+  position: relative;
+}
+.name-block {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+
+  text-align: right;
+  background-color: black;
+  display: inline-block;
+  padding: 15px 10px;
+}
+.aprasas {
+  width: 60%;
+  margin: 13px auto;
+}
