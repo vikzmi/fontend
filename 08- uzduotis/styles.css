@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  background-color: #ffe4c4;
+  justify-content: space-between;
+  padding: 30px 15px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+nav li {
+  margin: 8px;
+}
+.info-banner,
+.violet-banner {
+  background-color: #8a2be2;
+  padding: 20px 16px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.straipsniai {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px;
+}
+.straipsnio-blokas {
+  padding: 30px 16px;
+  background-color: white;
+  border: 2px solid #d2d2d2;
+  width: 30%;
+}
+.straipsnio-blokas h2 {
+  padding-bottom: 30px;
+}
+.info-banner p,
+.violet-banner p {
+  width: 80%;
+}
+footer {
+  background-color: #deb887;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
