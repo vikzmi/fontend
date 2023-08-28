@@ -1,0 +1,291 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+h2 {
+  color: #222;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 93px;
+}
+p {
+  max-width: 735px;
+  color: #222;
+  font-size: 20px;
+  margin: 0 auto;
+}
+/* Navigation*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 47px 72px;
+  box-sizing: border-box;
+  /* box-shadow: 0 0 10px black; */
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 63px;
+}
+nav a {
+  text-decoration: none;
+  color: #222222;
+}
+nav .active {
+  color: #eb5757;
+}
+
+/* Header */
+header {
+  height: calc(100vh - 120px);
+  background: url(img/header.jpg) center;
+  object-position: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .content {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+.content h1 {
+  font-size: 80px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.content p {
+  max-width: none;
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 16px 0 43px;
+}
+.buttons a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  width: 232px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.pirminis {
+  background: #eb5757;
+  color: white;
+}
+.antrinis {
+  margin-left: 21px;
+  background: white;
+  color: #eb5757;
+}
+
+/* Citation */
+.citation {
+  display: flex;
+  background: #eb5757;
+  align-items: center;
+  justify-content: center;
+}
+.citation p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 39px;
+  margin: 0;
+}
+
+/* Artists */
+.atlikejai {
+  text-align: center;
+}
+
+.red-border {
+  display: inline-block;
+  background: #eb5757;
+  width: 31px;
+  height: 5px;
+  margin: 19px;
+}
+.atlikeju-wrapper {
+  max-width: 1200px;
+  display: flex;
+  margin: 71px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+.atlikejas img {
+  width: 238px;
+  height: 238px;
+  border-radius: 238px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.atlikejas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.atlikejas h4 {
+  color: #222;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 36px 0 0 0;
+}
+.atlikejas p {
+  max-width: 206px;
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  margin: 8px 0 0 0;
+}
+/* Gallery */
+.Gallery {
+  background: rgba(235, 87, 87, 0.1);
+  text-align: center;
+  padding: 30px;
+}
+.photos-gallery {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 71px auto;
+  justify-content: center;
+  gap: 12px;
+}
+
+.photos-gallery img {
+  width: 248px;
+  height: 248px;
+  object-fit: cover;
+}
+
+/* Tickets */
+.tickets {
+  background: #f8f8f8;
+  padding: 120px 30px;
+  text-align: center;
+}
+.tickets-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 77px;
+  gap: 75px;
+}
+.ticket {
+  background-color: white;
+  width: 25%;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+}
+.ticket h4 {
+  color: #222;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 33px;
+  margin: 0;
+}
+.ticket article {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 30px auto;
+}
+
+.ticket p {
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  max-width: 300px;
+  margin-top: 30px;
+}
+.kaina h5{
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px; 
+}
+.kaina span{
+    color: #EB5757;
+    margin-left: 18px;
+}
+.ticket .buttons{
+    margin-bottom: 39px;
+}
+
+/* Map */
+.map{
+    background: rgba(235, 87, 87, 0.1);
+    text-align: center;
+    padding: 30px;
+}
+
+.map-container{
+    margin: 70px auto;
+    width: 1175px;
+    height: 443px;
+}
+
+/* Footer */
+
+footer{
+    padding: 66px 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 63px;
+  }
+  footer p{
+    color: #222;
+    font-size: 16px;
+    margin: 0;
+  }
+  footer a {
+    text-decoration: none;
+    color: #222222;
+  }
